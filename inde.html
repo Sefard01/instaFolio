@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaFolio Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="InstaFolio Logo" class="logo-image">
+            <div class="logo-text">InstaFolio</div>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#template">Templates</a></li>
+            <li><a href="#HowItWork">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="cta-button">Get Started</a>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Build Your Portfolio in Minutes</h1>
+            <p>Create a stunning online presence with ease.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="hero.png" alt="Portfolio Illustration">
+        </div>
+    </section>
+    <section class="how-it-works" id="HowItWork">
+        <div class="how-image">
+            <img src="how.png" alt="How it Works">
+        </div>
+        <div class="how-text">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step"><span>1.</span> Choose a Template</div>
+                <div class="step"><span>2.</span> Customize Your Portfolio</div>
+                <div class="step"><span>3.</span> Publish & Share</div>
+            </div>
+            <button id="watch-video">Watch Video</button>
+        </div>
+    </section>
+    <section class="portfolio-templates" id="template>
+        <h2 id="Template">Portfolio Templates</h2>
+        <div class="templates-grid">
+            <div class="template" onclick="previewTemplate('template1.png')">
+                <img src="port1.jpg" alt="Template 1">
+            </div>
+            <div class="template" onclick="previewTemplate('template2.png')">
+                <img src="port2.jpg" alt="Template 2">
+            </div>
+            <div class="template" onclick="previewTemplate('template3.png')">
+                <img src="port3.jpg" alt="Template 3">
+            </div>
+            <div class="template" onclick="previewTemplate('template4.png')">
+                <img src="port4.jpg" alt="Template 4">
+            </div>
+            <div class="template" onclick="previewTemplate('template5.png')">
+                <img src="port5.jpg" alt="Template 5">
+            </div>
+            <div class="template" onclick="previewTemplate('template6.png')">
+                <img src="port6.jpg" alt="Template 6">
+            </div>
+        </div>
+        <button class="view-more">View More Templates</button>
+    </section>
+    <section class="testimonials" >
+        <h2>User Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 1">
+                <p>"This portfolio builder is amazing! Super easy to use and very professional."</p>
+                <h4>John Doe</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 2">
+                <p>"I created my portfolio in just 10 minutes. Loved the design options!"</p>
+                <h4>Jane Smith</h4>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 3">
+                <p>"Highly recommended! Great templates and easy customization."</p>
+                <h4>Mike Johnson</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 3">
+                <p>"Highly recommended! Great templates and easy customization."</p>
+                <h4>Mike Johnson</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 3">
+                <p>"Highly recommended! Great templates and easy customization."</p>
+                <h4>Mike Johnson</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="img.jpg" alt="User 3">
+                <p>"Highly recommended! Great templates and easy customization."</p>
+                <h4>Mike Johnson</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+        <button class="view-more">See More Reviews</button>
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Free Plan</h3>
+                <p class="price">$0/month</p>
+                <ul>
+                    <li>✔ Basic Templates</li>
+                    <li>✔ Limited Customization</li>
+                    <li>✔ Community Support</li>
+                </ul>
+                <button class="subscribe">Subscribe</button>
+            </div>
+            <div class="pricing-card premium">
+                <h3>Premium Plan</h3>
+                <p class="price">$19/month</p>
+                <ul>
+                    <li>✔ All Free Features</li>
+                    <li>✔ Advanced Customization</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ Custom Domain</li>
+                </ul>
+                <button class="subscribe premium-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">Is it free to create a portfolio? <span class="arrow">&#9662;</span></button>
+                <div class="faq-answer">
+                    <p>Yes, you can create a portfolio for free using our basic templates. Premium features require a subscription.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">Can I connect a custom domain? <span class="arrow">&#9662;</span></button>
+                <div class="faq-answer">
+                    <p>Yes, you can connect a custom domain with our premium plan.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">Is my data secure? <span class="arrow">&#9662;</span></button>
+                <div class="faq-answer">
+                    <p>We take security seriously. All data is encrypted and securely stored.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="https://www.youtube.com/@WebScan_m"><img src="youtube.jpg" alt="Youtube"></a>
+                    <a href="#"><img src="linkedin.jpg" alt="Linkdein"></a>
+                    <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="footer-newsletter">
+                <p id="newsp">Subscribe to get the latest updates.</p>
+                
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Copyright Notice -->
+        <div class="footer-bottom">
+            <p>© 2025 InstaFolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
